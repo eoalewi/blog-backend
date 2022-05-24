@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "Alewi",
+        "MONGO_PASSWORD": "Alewitosin",
+        "MONGO_DEFAULT_DATABASE": "mymessages"
+    }
+}
