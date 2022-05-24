@@ -6,7 +6,6 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const multer = require('multer');
 const { v4: uuidv4 } = require('uuid');
-const compression = require("compression");
 const morgan = require("morgan");
 
 const feedRoutes = require('./routes/feed');
@@ -49,7 +48,6 @@ const accessLogStream = fs.createWriteStream(
     { flags: "a" }
   )
   
-  app.use(compression())
   app.use(morgan("combined", { stream: accessLogStream }))
   
 
